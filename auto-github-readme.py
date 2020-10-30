@@ -14,11 +14,11 @@ def prompt():
 
 def write_file(information: list):
     file = open('README.md', 'w')
-    file.write(f'### Hello, my name is {information[0]}.\n\n')
-    file.write(f'## Currently learning\n')
+    file.write(f'## Hello, my name is {information[0]}.\n\n')
+    file.write(f'### Currently learning\n')
     for x in information[1]:
         file.write(f'* {x}\n')
-    file.write(f'\n##Contact\n')
+    file.write(f'\n### Contact\n')
     for x in information[2]:
         file.write(f'* {x}\n')
     file.write('\n')
